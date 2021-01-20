@@ -109,13 +109,13 @@ export default class TutorialsList extends Component {
                 type="button"
                 onClick={this.searchTitle}
               >
-                Search
+                Procurar
               </button>
             </div>
           </div>
         </div>
         <div className="col-md-6">
-          <h4>Tutorials List</h4>
+          <h4>Lista de tutoriais</h4>
 
           <ul className="list-group">
             {tutorials &&
@@ -137,7 +137,7 @@ export default class TutorialsList extends Component {
             className="m-3 btn btn-sm btn-danger"
             onClick={this.removeAllTutorials}
           >
-            Remove All
+            Apagar Todos
           </button>
         </div>
         <div className="col-md-6">
@@ -146,13 +146,13 @@ export default class TutorialsList extends Component {
               <h4>Tutorial</h4>
               <div>
                 <label>
-                  <strong>Title:</strong>
+                  <strong>Titulo: </strong>
                 </label>{" "}
                 {currentTutorial.title}
               </div>
               <div>
                 <label>
-                  <strong>Description:</strong>
+                  <strong>Descrição: </strong>
                 </label>{" "}
                 {currentTutorial.description}
               </div>
@@ -173,7 +173,7 @@ export default class TutorialsList extends Component {
           ) : (
             <div>
               <br />
-              <p>Please click on a Tutorial...</p>
+              <p>Clique em um tutorial...</p>
             </div>
           )}
         </div>

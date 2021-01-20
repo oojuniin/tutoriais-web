@@ -70,15 +70,15 @@ export default class AddTutorial extends Component {
       <div className="submit-form">
         {this.state.submitted ? (
           <div>
-            <h4>You submitted successfully!</h4>
+            <h4>Sucesso!</h4>
             <button className="btn btn-success" onClick={this.newTutorial}>
-              Add
+              Adicionar
             </button>
           </div>
         ) : (
           <div>
             <div className="form-group">
-              <label htmlFor="title">Title</label>
+              <label htmlFor="title">Título</label>
               <input
                 type="text"
                 className="form-control"
@@ -91,7 +91,7 @@ export default class AddTutorial extends Component {
             </div>
 
             <div className="form-group">
-              <label htmlFor="description">Description</label>
+              <label htmlFor="description">Descrição</label>
               <input
                 type="text"
                 className="form-control"
@@ -104,7 +104,7 @@ export default class AddTutorial extends Component {
             </div>
 
             <button onClick={this.saveTutorial} className="btn btn-success">
-              Submit
+              Enviar
             </button>
           </div>
         )}
